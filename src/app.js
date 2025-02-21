@@ -1,5 +1,4 @@
-import express from "express"; //framework
-import productRouter from "./routers/product";
+import express from "express";
 
 const app = express();
 
@@ -7,6 +6,5 @@ const app = express();
 app.use(express.json());
 
 // Router
-app.use("/api", productRouter);
 
 export const viteNodeApp = app;
